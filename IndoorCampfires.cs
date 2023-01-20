@@ -1,15 +1,16 @@
 ﻿using System.Reflection;
-using Harmony;
+using HarmonyLib;
 using UnityEngine;
 using MelonLoader;
+using Il2Cpp;
 
 namespace IndoorCampfires
 {
     public class IndoorCampfires : MelonMod
     {
-        public override void OnApplicationStart()
+        public override void OnInitializeMelon()
         {
-            Debug.Log("[indoor-campfires] Version " + Assembly.GetExecutingAssembly().GetName().Version);
+            
         }
     }
 
